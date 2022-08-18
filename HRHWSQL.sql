@@ -23,7 +23,7 @@ ON l.location_id=d.location_id
 WHERE e.first_name LIKE '%z%'
 --Ex6
 SELECT e.first_name,e.last_name,d.department_id,d.department_name
-FROM employees e LEFT JOIN departments d
+FROM employees e RIGHT JOIN departments d
 ON e.department_id=d.department_id
 --EX7
 SELECT e.first_name,e.last_name,e.salary
